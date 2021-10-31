@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+li,
+a,
+button {
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.navbar-links li {
+    list-style: none;
+    display: inline-block;
+}
