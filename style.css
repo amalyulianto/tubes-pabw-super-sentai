@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: white;
 }
 
 li,
@@ -16,14 +15,50 @@ button {
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
+    overflow: hidden;
+    background-color: #E0DFD5;
+    padding: 0px 20px;
 }
 
 .logo {
     cursor: pointer;
+    padding: 30px 10px;
+}
+
+.logo h3 {
+    font-family: 'Cormorant Garamond','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+.navbar-links {
+    align-self: flex-end;
 }
 
 .navbar-links li {
     list-style: none;
-    display: inline-block;
+    display: inline-block;   
+    
+}
+
+.navbar-links a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: left;
+    color: #575757;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 30px 20px;
+}
+
+.navbar-links a:hover{
+    color: white;  
+}
+
+.btn {
+    background-color: none;
+    border: none;
+    color: #575757;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
 }
