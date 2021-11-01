@@ -63,6 +63,7 @@ button {
 }
 
 .section-1 {
+    display: flex;
     margin: 40px;
     font-family: 'Cormorant Garamond', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -71,7 +72,29 @@ button {
     font-size: 50px;
 }
 
+.image-col {
+    flex-basis: 80%;
+    margin-left: 20px;
+}
+
 .img-1 {
-    position: absolute;
+    max-width: 100%;
+    position: relative;
     right: 0px;
+}
+
+.about-col {
+    /* flex-basis: 80%; */
+}
+
+.motto {
+    margin-bottom: 10px;
+}
+
+.btn-readmore {
+    background: rgba(224, 223, 213, 0.6);
+    border-radius: 60px;
+    border: 0;
+    padding: 20px 50px 20px 50px;
+    margin-top: 20px;
 }
