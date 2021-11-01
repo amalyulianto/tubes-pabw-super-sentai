@@ -13,6 +13,9 @@ button {
 }
 
 .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,12 +67,19 @@ button {
 
 .section-1 {
     display: flex;
-    margin: 40px;
-    font-family: 'Cormorant Garamond', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 100px 30px 0px 30px;
 }
 
 .motto {
+    font-size: 40px;
+    color: black;
+    padding: 10px 20px;
+    font-family: 'Berkshire Swash';
     font-size: 50px;
+    margin-top: 115px;
+}
+.about{
+    padding:  0px 20px;
 }
 
 .image-col {
@@ -79,7 +89,7 @@ button {
 
 .img-1 {
     max-width: 100%;
-    position: relative;
+    position: static;
     right: 0px;
 }
 
@@ -92,9 +102,69 @@ button {
 }
 
 .btn-readmore {
+    cursor: pointer;
     background: rgba(224, 223, 213, 0.6);
     border-radius: 60px;
     border: 0;
-    padding: 20px 50px 20px 50px;
+    padding: 10px 30px 10px 30px;
+    margin-left: 200px;
     margin-top: 20px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    overflow: hidden;
+    background-color: #E0DFD5;
+    padding: 20px 450px 20px 450px;
+    margin-top: 120px;
+}
+
+.container h4{
+    font-family: 'Cormorant Garamond','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+
+.gambaride {
+    float:left; 
+    margin: 30px 30px 30px 3px; 
+    max-width: 50%;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    overflow: hidden;
+    background-color: #E0DFD5;
+    padding: 20px 500px 20px 500px;
+    margin-top: 380px;
+    
+}
+
+.container-2 h4{
+    font-family: 'Cormorant Garamond','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+
+.container-foot {
+    display: flex;
+    justify-content: space-between;    
+    overflow: hidden;
+    background-color: #E0DFD5;
+    padding: 20px 30px;
+    margin-top: 380px;
+}
+
+.container-foot h5 {
+    font-size: 30px;
+}
+
+.icon{
+    max-width: 40%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    float: right;
 }
