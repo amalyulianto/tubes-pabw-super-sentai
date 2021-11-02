@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Roboto:wght@400&display=swap');
 
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+body{
+    background: linear-gradient(white, #FEF5ED 5%, white 30%,  white);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
 
 li,
 a,
@@ -95,9 +105,7 @@ button {
     right: 0px;
 }
 
-.about-col {
-    /* flex-basis: 80%; */
-}
+    /* about-col flex-basis: 80%; */
 
 .motto {
     margin-bottom: 10px;
@@ -127,12 +135,17 @@ button {
 .container h4{
     font-family: 'Cormorant Garamond','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 50px;
+    list-style: none;
+    display: inline-block;
 }
 
-.gambaride {
-    float:left; 
-    margin: 30px 30px 30px 3px; 
-    max-width: 50%;
+.gambaride {    
+    align-self: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    float:none; 
+    margin: 30px 30px 30px 60px; 
+    max-width: 90%;
 }
 
 .container-2 {
@@ -142,7 +155,7 @@ button {
     overflow: hidden;
     background-color: #E0DFD5;
     padding: 20px 500px 20px 500px;
-    margin-top: 380px;
+    margin-top: 150px;
     
 }
 
@@ -157,7 +170,7 @@ button {
     overflow: hidden;
     background-color: #E0DFD5;
     padding: 20px 30px;
-    margin-top: 380px;
+    margin-top: 200px;
 }
 
 .container-foot h5 {
@@ -169,4 +182,130 @@ button {
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
     float: right;
+}
+
+/*testimoni*/
+
+.wrapper{
+    width: 100%;
+    /* 300% 'caz we have 3 cards */
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.card{
+    width: 800px;
+    min-height: 100%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 20px 40px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 100px 200px;
+}
+
+
+.card-thumb{
+    width: 70%;
+    height: 250px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: static;
+}
+
+.client-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client-name{
+    position: static;
+    bottom: 10px;
+    right: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 5px 20px;
+    background: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.card-body{
+    width: 120%;
+    min-height: 100%;
+    height: auto;
+    margin-left: 20px;
+    position: static;
+    padding-bottom: 50px;
+}
+
+.review{
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.rating{
+    position: static;
+    bottom: 10px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star{
+    width: 25px;
+    margin-right: 5px;
+}
+
+.indicators{
+    position: static;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.indicators button{
+    background: none;
+    border: none;
+    outline: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    margin-left: 50px;
+    transition: .5s;
+}
+
+button.active{
+    width: 40px;
+    border-radius: 50px;
+    background: #fff;
+}
+
+@media (max-width: 800px){
+    .container{
+        width: 50%;
+        margin: auto;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .card-thumb{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .card-body{
+        width: 100%;
+        min-height: auto;
+        margin-left: 0;
+    }
 }
